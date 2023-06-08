@@ -11,7 +11,7 @@ phases:
 
 #Static Application Security Scan (SAST scan) using SonarCloud
      - mvn clean install
-     - mvn verify sonar:sonar \ -Dsonar.projectKey=$Project \ -Dsonar.organization=$Organization \ -Dsonar.host.url=$HOST \ -Dsonar.login=$LOGIN 
+     - mvn sonar:sonar \ -Dsonar.projectKey=$Project \ -Dsonar.organization=$Organization \ -Dsonar.host.url=$HOST \ -Dsonar.login=$LOGIN 
 
 #Quality Gates for Static Application Security Scan(SAST) using SonarCloud
 
